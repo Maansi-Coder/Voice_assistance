@@ -12,7 +12,7 @@ from PIL import ImageTk, Image
 from pywikihow import search_wikihow
 
 window= tk.Tk()
-window.geometry("1000x500")
+window.geometry("700x350")
 engine= pyttsx3.init('sapi5')
 voices= engine.getProperty('voices')
 #print(voices[0].id)
@@ -121,12 +121,12 @@ def start():
 
 
 l1= tk.Label(window,text="Hello! Whats your name? ",font="Georgia 30 italic bold")
-l1.place(relx=0.25,rely=0.2)
+l1.place(relx=0.15,rely=0.2)
 
 text = tk.StringVar() 
 entry1 = tk.Entry(window, textvariable = text, width=25,justify = "center",font="Arial 20 italic bold") 
 entry1.focus_force() 
-entry1.place(relx=0.31,rely=0.4)
+entry1.place(relx=0.25,rely=0.4)
 
 b= tk.Button(window,text="Start",font="Arial 20 italic bold",command=start)
 b.place(relx=0.8,rely=0.6)
